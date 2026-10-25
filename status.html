@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Check status — ManDuF Scholarship</title>
+  <meta name="theme-color" content="#0f5f6b">
+  <link rel="icon" href="assets/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/config.js"></script>
+  <script type="module" src="assets/status.js"></script>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="masthead">
+      <img src="assets/logo.jpg" alt="Educate One, Empower All">
+      <div>
+        <div class="org">Mandu Foundation</div>
+        <div class="sub">Application status</div>
+      </div>
+      <nav><a href="index.html">Apply</a></nav>
+    </header>
+    <main>
+      <h1>Check your application</h1>
+      <p class="muted">Enter the application number and access code you received when you submitted.</p>
+      <form id="lookup" novalidate>
+        <div class="field">
+          <label for="app">Application number</label>
+          <input id="app" type="text" autocapitalize="characters" autocomplete="off" placeholder="MDF-2026-0001" required>
+        </div>
+        <div class="field">
+          <label for="code">Access code</label>
+          <input id="code" type="text" autocapitalize="characters" autocomplete="off" placeholder="6 letters and numbers" maxlength="6" required>
+        </div>
+        <button class="btn primary" type="submit" style="width:100%">Check status</button>
+      </form>
+      <div id="result" aria-live="polite"></div>
+    </main>
+    <footer class="site">Mandu Foundation (ManDuF), Mandu Chiefdom, Kailahun District</footer>
+  </div>
+</body>
+</html>
